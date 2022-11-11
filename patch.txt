@@ -1,0 +1,15 @@
+#java -version
+#openjdk version "11.0.16"
+
+#vlc/contrib/contrib-android-aarch64-linux-android/bluray/Makefile.am
+#line 253
+
+if USING_JAVAC_12
+java_versions = -Djava_version_asm=1.7 -Djava_version_bdj=1.7
+else
+if USING_JAVAC_9
+java_versions = -Djava_version_asm=1.6 -Djava_version_bdj=1.6
+else
+java_versions = -Djava_version_asm=1.6 -Djava_version_bdj=1.6
+endif
+endif
